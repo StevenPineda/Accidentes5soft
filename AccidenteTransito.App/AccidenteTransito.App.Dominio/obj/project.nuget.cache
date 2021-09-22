@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/9c3WuFUQ0TL0tudG2C+E3FIm80EEE1gTqTcejBdDhL1sWXSDS0WickchSRCPdByar7CqTsAOfhkOCzBRxlqhA==",
+  "success": true,
+  "projectFilePath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yheison\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Yheison\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
