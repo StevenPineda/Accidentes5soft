@@ -16,3 +16,4 @@ namespace AccidenteTransito.App.Dominio{
         public Vehiculo Vehiculo {get;set;}
     }
 }
+
