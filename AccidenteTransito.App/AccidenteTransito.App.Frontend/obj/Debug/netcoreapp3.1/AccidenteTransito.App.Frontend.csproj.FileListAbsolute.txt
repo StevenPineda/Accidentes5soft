@@ -35,4 +35,8 @@ C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.Ap
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.pdb
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.genruntimeconfig.cache
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.csproj.CopyComplete
-C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Accidentes\List.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Accidentes\Accidente.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\AgenteTransito.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\Involucrado.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\Persona.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\Vehiculo.cshtml.g.cs

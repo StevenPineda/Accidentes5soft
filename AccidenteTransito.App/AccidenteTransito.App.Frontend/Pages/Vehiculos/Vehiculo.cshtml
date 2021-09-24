@@ -1,0 +1,133 @@
+﻿@page
+@model AccidenteTransito.App.Frontend.Pages.VehiculoModel
+@{
+}
+
+<body>
+    <div class="container center-block">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="text-center">
+                    <h3 class="display-4">TransitApp</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">Vehículo</h5>
+                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás gestionar los datos de los
+                    Vehículos registrados en el sistema.</h6>
+                <div>
+                    <form action="..." method="POST">
+                        <div class="form-group">
+                            <label>Tipo de Vehículo</label>
+                            <select class="form-control form-control-sm" name="txtTipoVehiculo" value="">
+                                <option>Automóvil</option>
+                                <option>Motocicleta</option>
+                                <option>Autobús</option>
+                                <option>Bicicleta</option>
+                                <option>Camión</option>
+                                <option>Scooter</option>
+                                <option>Patineta</option>
+                                <option>Patines</option>
+                                <option>Motocarro</option>
+                                <option>Cuatrimoto</option>
+                                <option>Tractocamión</option>
+                                <option>Remolque</option>
+                                <option>Tracción Animal</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de Servicio</label>
+                            <select class="form-control form-control-sm" name="txtTipoServicio" value="">
+                                <option>Privado</option>
+                                <option>Público</option>
+                                <option>Gubernamental</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Placa</label>
+                            <input type="text" class="form-control" name="txtPlaca" value=""
+                            placeholder="JMG 214">
+                        </div>
+                        <div class="form-group">
+                            <label>Marca</label>
+                            <input type="text" class="form-control" name="txtMarca" value=""
+                                placeholder="Audi">
+                        </div>
+                                                <div class="form-group">
+                            <label>Modelo</label>
+                            <input type="text" class="form-control" name="txtModelo" value=""
+                                placeholder="Q7">
+                        </div>
+                                                <div class="form-group">
+                            <label>Color</label>
+                            <input type="text" class="form-control" name="txtColor" value=""
+                                placeholder="Navy">
+                        </div>
+                                                <div class="form-group">
+                            <label>Año</label>
+                            <input type="number" class="form-control" name="txtAnio" value=""
+                            placeholder="2022">
+                        </div>
+                        <div class="form-group">
+                            <label>SOAT</label>
+                            <input type="text" class="form-control" name="txtSoat" value="" 
+                                placeholder="SI / NO">
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="accion" value="Registrar">
+                        <input type="submit" class="btn btn-success" name="accion" value="Actualizar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="card-title"> </h2>
+            <h5 class="card-title">Vehículos Registrados</h5>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead" style="background-color: #33D4FF;">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Tipo de Vehículo</th>
+                            <th scope="col">Tipo de Servicio</th>
+                            <th scope="col">Placa</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Modelo</th>
+                            <th scope="col">Color</th>
+                            <th scope="col">Año</th>
+                            <th scope="col">SOAT</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="usuario" items="${usuarios}">
+                            <tr>
+                                <th scope="row">${usuario.getId()}</th>
+                                <td>${usuario.getTipoVehiculo()}</td>
+                                <td>${usuario.getTipoServicio()}</td>
+                                <td>${usuario.getPlaca()}</td>
+                                <td>${usuario.getMarca()}</td>
+                                <td>${usuario.getModelo()}</td>
+                                <td>${usuario.getColor()}</td>
+                                <td>${usuario.getAnio()}</td>
+                                <td>${usuario.getSoat()}</td>
+                                <td>
+                                    <a class="btn btn-Success"
+                                        href="Controlador?menu=Empleados&accion=Cargar&id=${usuario.getId()}"
+                                        style="background-color: #5ED682;">Editar</a>
+                                    <a class="btn btn-warning"
+                                        href="Controlador?menu=Empleados&accion=Eliminar&id=${usuario.getId()}"
+                                        style="background-color: #FFC300;">Eliminar</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

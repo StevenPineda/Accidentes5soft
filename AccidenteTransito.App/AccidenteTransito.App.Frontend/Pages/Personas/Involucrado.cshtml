@@ -1,0 +1,135 @@
+﻿@page
+@model AccidenteTransito.App.Frontend.Pages.InvolucradoModel
+@{
+}
+
+<body>
+    <div class="container center-block">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="text-center">
+                    <h3 class="display-4">TransitApp</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">Usuario</h5>
+                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás gestionar los datos de los
+                    Usuarios registrados en el sistema.</h6>
+                <div>
+                    <form action="..." method="POST">
+                        <div class="form-group">
+                            <label>Documento</label>
+                            <input type="number" class="form-control" name="txtDocumento"
+                                value="${usuarioSeleccionado.getDocumento()}" placeholder="2468">
+                            <small class="form-text text-muted">Ingrese el No. de Documento sin espacios ni caracteres
+                                especiales.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" name="txtNombre" value=""
+                            placeholder="Armando">
+                        </div>
+                        <div class="form-group">
+                            <label>Apellidos</label>
+                            <input type="text" class="form-control" name="txtApellidos" value=""
+                                placeholder="Casas Rojas">
+                        </div>
+                        <div class="form-group">
+                            <label>Edad</label>
+                            <input type="number" class="form-control" name="txtEdad" value=""
+                            placeholder="58">
+                        </div>
+                        <div class="form-group">
+                            <label>Género</label>
+                            <select class="form-control form-control-sm" name="txtGenero" value="">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>LGBT</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="text" class="form-control" name="txtTelefono" value="" 
+                                placeholder="13579">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="txtEmail" value=""
+                                aria-describedby="emailHelp" placeholder="armancasas@mail.co">
+                            <div id="emailHelp" class="form-text">
+                                <small class="form-text text-muted">Nunca compartas tu email con otra persona.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Agente Vial</label>
+                            <select class="form-control form-control-sm" name="txtTipoAgenteVial" value="">
+                                <option>Conductor</option>
+                                <option>Pasajero</option>
+                                <option>Peatón</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Presenta Licencia</label>
+                            <input type="text" class="form-control" name="txtLicencia" value="" 
+                                placeholder="SI / NO">
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="accion" value="Registrar">
+                        <input type="submit" class="btn btn-success" name="accion" value="Actualizar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="card-title"> </h2>
+            <h5 class="card-title">Usuarios Registrados</h5>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead" style="background-color: #33D4FF;">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Documento</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Género</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Agente Vial</th>
+                            <th scope="col">Presenta Licencia</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="usuario" items="${usuarios}">
+                            <tr>
+                                <th scope="row">${usuario.getId()}</th>
+                                <td>${usuario.getDocumento()}</td>
+                                <td>${usuario.getNombre()}</td>
+                                <td>${usuario.getApellidos()}</td>
+                                <td>${usuario.getEdad()}</td>
+                                <td>${usuario.getGenero()}</td>
+                                <td>${usuario.getTelefono()}</td>
+                                <td>${usuario.getEmail()}</td>
+                                <td>${usuario.getAgenteVial()}</td>
+                                <td>${usuario.getPresentaLicencia()}</td>
+                                <td>
+                                    <a class="btn btn-Success"
+                                        href="Controlador?menu=Empleados&accion=Cargar&id=${usuario.getId()}"
+                                        style="background-color: #5ED682;">Editar</a>
+                                    <a class="btn btn-warning"
+                                        href="Controlador?menu=Empleados&accion=Eliminar&id=${usuario.getId()}"
+                                        style="background-color: #FFC300;">Eliminar</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

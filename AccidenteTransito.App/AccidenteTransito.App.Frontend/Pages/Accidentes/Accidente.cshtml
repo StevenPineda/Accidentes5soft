@@ -1,0 +1,121 @@
+﻿@page
+@model AccidenteTransito.App.Frontend.Pages.AccidenteModel
+@{
+}
+
+<body>
+    <div class="container center-block">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="text-center">
+                    <h3 class="display-4">TransitApp</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">Accidentes</h5>
+                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás gestionar los datos de los
+                    Accidentes consignados en el sistema.</h6>
+                <div>
+                    <form action="..." method="POST">
+                        <div class="form-group">
+                            <label>Dirección</label>
+                            <input type="text" class="form-control" name="txtDireccion" value=""
+                                placeholder="Calle 1 #13-00">
+                        </div>
+                        <div class="form-group">
+                            <label>Latitud</label>
+                            <input type="text" class="form-control" name="txtLatitud" value="" placeholder="5,49495">
+                        </div>
+                        <div class="form-group">
+                            <label>Longitud</label>
+                            <input type="text" class="form-control" name="txtLongitud" value="" placeholder="5,49495">
+                        </div>
+                        <div class="form-group">
+                            <label>Barrio</label>
+                            <input type="text" class="form-control" name="txtBarrio" value="" 
+                                placeholder="La Cabaña">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input id="datepicker" width="276" name="txtFecha" value="09/24/2021">
+                        </div>
+                        <div class="form-group">
+                            <label>Hora</label>
+                            <input type="text" class="form-control" name="txtHora" value="" placeholder="10:00">
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de Accidente</label>
+                            <select class="form-control form-control-sm" name="txtTipoAccidente" value="">
+                                <option>Choque</option>
+                                <option>Atropello</option>
+                                <option>Volcamiento</option>
+                                <option>Caída del ocupante</option>
+                                <option>Caída de objeto</option>
+                                <option>Incendio</option>
+                                <option>Derrumbe</option>
+                                <option>Inundación</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <textarea class="form-control" rows="3" name="txtDescripcion" value=""
+                            placeholder="Realiza una breve descripción de lo sucedido."></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="accion" value="Registrar">
+                        <input type="submit" class="btn btn-success" name="accion" value="Actualizar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="card-title"> </h2>
+            <h5 class="card-title">Accidentes Registrados</h5>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead" style="background-color: #33D4FF;">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Dirección</th>
+                            <th scope="col">Latitud</th>
+                            <th scope="col">Longitud</th>
+                            <th scope="col">Barrio</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Tipo de Accidente</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="usuario" items="${usuarios}">
+                            <tr>
+                                <th scope="row">${usuario.getId()}</th>
+                                <td>${usuario.getDocumento()}</td>
+                                <td>${usuario.getNombre()}</td>
+                                <td>${usuario.getCorreo()}</td>
+                                <td>${usuario.getPassword()}</td>
+                                <td>${usuario.getRol()}</td>
+                                <td>${usuario.getEstado()}</td>
+                                <td>${usuario.getEstado()}</td>
+                                <td>${usuario.getEstado()}</td>
+                                <td>
+                                    <a class="btn btn-Success"
+                                        href="Controlador?menu=Empleados&accion=Cargar&id=${usuario.getId()}"
+                                        style="background-color: #5ED682;">Editar</a>
+                                    <a class="btn btn-warning"
+                                        href="Controlador?menu=Empleados&accion=Eliminar&id=${usuario.getId()}" 
+                                        style="background-color: #FFC300;">Eliminar</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
