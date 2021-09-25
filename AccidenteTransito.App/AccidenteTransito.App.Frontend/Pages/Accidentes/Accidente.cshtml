@@ -1,6 +1,7 @@
 ﻿@page
 @model AccidenteTransito.App.Frontend.Pages.AccidenteModel
 @{
+    ViewData["Title"] = "Accidentes";
 }
 
 <body>
@@ -36,16 +37,19 @@
                         </div>
                         <div class="form-group">
                             <label>Barrio</label>
-                            <input type="text" class="form-control" name="txtBarrio" value="" 
-                                placeholder="La Cabaña">
+                            <input type="text" class="form-control" name="txtBarrio" value="" placeholder="La Cabaña">
                         </div>
                         <div class="form-group">
                             <label>Fecha</label>
-                            <input id="datepicker" width="276" name="txtFecha" value="09/24/2021">
+                            <input type="date" class="form-control" name="txtFecha" value="" placeholder="25/09/2021">
                         </div>
                         <div class="form-group">
                             <label>Hora</label>
-                            <input type="text" class="form-control" name="txtHora" value="" placeholder="10:00">
+                            <input type="time" class="form-control" name="txtHora" value="" placeholder="10:00">
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha y Hora</label>
+                            <input type="datetime-local" class="form-control" name="txtHora" value="" placeholder="10:00">
                         </div>
                         <div class="form-group">
                             <label>Tipo de Accidente</label>
@@ -64,7 +68,7 @@
                         <div class="form-group">
                             <label>Descripción</label>
                             <textarea class="form-control" rows="3" name="txtDescripcion" value=""
-                            placeholder="Realiza una breve descripción de lo sucedido."></textarea>
+                                placeholder="Realiza una breve descripción de lo sucedido."></textarea>
                         </div>
                         <input type="submit" class="btn btn-primary" name="accion" value="Registrar">
                         <input type="submit" class="btn btn-success" name="accion" value="Actualizar">
@@ -108,7 +112,7 @@
                                         href="Controlador?menu=Empleados&accion=Cargar&id=${usuario.getId()}"
                                         style="background-color: #5ED682;">Editar</a>
                                     <a class="btn btn-warning"
-                                        href="Controlador?menu=Empleados&accion=Eliminar&id=${usuario.getId()}" 
+                                        href="Controlador?menu=Empleados&accion=Eliminar&id=${usuario.getId()}"
                                         style="background-color: #FFC300;">Eliminar</a>
                                 </td>
                             </tr>
