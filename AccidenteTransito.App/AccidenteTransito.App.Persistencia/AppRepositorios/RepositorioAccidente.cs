@@ -2,10 +2,9 @@ using System.Collections.Generic;
 using System.Linq;
 using AccidenteTransito.App.Dominio;
 
-
-namespace AccidenteTransito.App.Persistencia{
-
-    public class RepositorioAccidente:InterfaceRespositorioAccidente
+namespace AccidenteTransito.App.Persistencia
+{
+    public class RepositorioAccidente:InterfaceRepositorioAccidente
     {
         private readonly AppContext _appContext;
 
@@ -13,13 +12,13 @@ namespace AccidenteTransito.App.Persistencia{
             _appContext=appContext;
         }
 
-        Accidente InterfaceRespositorioAccidente.AddAccidente(Accidente accidente){
+        Accidente InterfaceRepositorioAccidente.AddAccidente(Accidente accidente){
             var accidenteAdicionado=_appContext.Accidentes.Add(accidente);
             _appContext.SaveChanges();
             return accidenteAdicionado.Entity;
         }
 
-        void InterfaceRespositorioAccidente.DeleteAccidente(int Id){
+        void InterfaceRepositorioAccidente.DeleteAccidente(int Id){
             var accidenteEncontrado=_appContext.Accidentes.FirstOrDefault(a => a.Id==Id);
             if(accidenteEncontrado==null)
             return;
@@ -27,15 +26,15 @@ namespace AccidenteTransito.App.Persistencia{
             _appContext.SaveChanges();
         }
 
-        IEnumerable<Accidente> InterfaceRespositorioAccidente.GetAllAccidentes(){
+        IEnumerable<Accidente> InterfaceRepositorioAccidente.GetAllAccidentes(){
             return _appContext.Accidentes;
         }
 
-        Accidente InterfaceRespositorioAccidente.GetAccidente(int Id){
+        Accidente InterfaceRepositorioAccidente.GetAccidente(int Id){
             return _appContext.Accidentes.FirstOrDefault(a => a.Id==Id);
         }
 
-        Accidente InterfaceRespositorioAccidente.UpdateAccidente(Accidente accidente){
+        Accidente InterfaceRepositorioAccidente.UpdateAccidente(Accidente accidente){
             var accidenteEncontrado=_appContext.Accidentes.FirstOrDefault(a => a.Id==accidente.Id);
             if(accidenteEncontrado!=null){
                 accidenteEncontrado.Direccion=accidente.Direccion;

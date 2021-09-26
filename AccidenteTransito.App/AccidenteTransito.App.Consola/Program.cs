@@ -1,5 +1,6 @@
 ﻿using System;
 using AccidenteTransito.App.Dominio;
+using AccidenteTransito.App.Persistencia;
 
 namespace AccidenteTransito.App.Consola
 {

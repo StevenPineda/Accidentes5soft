@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using AccidenteTransito.App.Dominio;
 
-namespace AccidenteTransito.App.Persistencia{
+namespace AccidenteTransito.App.Persistencia
+{
 
-    public interface InterfaceRespositorioAccidente{
+    public interface InterfaceRepositorioAccidente{
         IEnumerable<Accidente> GetAllAccidentes();
 
         Accidente AddAccidente(Accidente accidente);
