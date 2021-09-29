@@ -25,6 +25,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
+                "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
+              },
               "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj": {
                 "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj"
               }

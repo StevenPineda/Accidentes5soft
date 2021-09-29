@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "AccidenteTransito.App.Consola/1.0.0": {
         "dependencies": {
+          "AccidenteTransito.App.Dominio": "1.0.0",
           "AccidenteTransito.App.Persistencia": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0"
         },
