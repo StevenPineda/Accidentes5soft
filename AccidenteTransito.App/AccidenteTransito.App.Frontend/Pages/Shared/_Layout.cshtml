@@ -41,18 +41,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Estadísticas</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Personas
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Personas/AgenteTransito">Agente de
-                                        Tránsito</a></li>
-                                <li><a class="dropdown-item" asp-area="" asp-page="/Personas/Involucrado">Usuario</a>
-                                </li>
-                            </ul>
-                        </li>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" asp-area="" asp-page="/Personas/AgenteTransito">Agente de
+                                        Tránsito</a>
+                                <a class="dropdown-item" asp-area="" asp-page="/Personas/Involucrado">Usuario</a>
+                            </div>    
+                     
+                        </div>
                     </ul>
                 </div>
             </div>
