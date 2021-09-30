@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\ProyectoAccidentes\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\AccidenteTransito.App.Frontend.csproj",
         "projectName": "AccidenteTransito.App.Frontend",
         "projectPath": "C:\\ProyectoAccidentes\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\AccidenteTransito.App.Frontend.csproj",
-        "packagesPath": "C:\\Users\\Claudia\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\AUX ADMINSTRATIVO\\.nuget\\packages\\",
         "outputPath": "C:\\ProyectoAccidentes\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Claudia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\AUX ADMINSTRATIVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
