@@ -17,6 +17,17 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card-body">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="ABC123" aria-label="Search">
+                            <button type="submit" class="btn btn-outline-secondary">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+                <br>
                 <h5 class="card-title">Vehículo</h5>
                 <h6 class="card-subtitle mb-2 text-muted">En este panel podrás gestionar los datos de los
                     Vehículos registrados en el sistema.</h6>
@@ -51,33 +62,27 @@
                         </div>
                         <div class="form-group">
                             <label>Placa</label>
-                            <input type="text" class="form-control" name="txtPlaca" value=""
-                            placeholder="JMG 214">
+                            <input type="text" class="form-control" name="txtPlaca" value="" placeholder="JMG 214">
                         </div>
                         <div class="form-group">
                             <label>Marca</label>
-                            <input type="text" class="form-control" name="txtMarca" value=""
-                                placeholder="Audi">
+                            <input type="text" class="form-control" name="txtMarca" value="" placeholder="Audi">
                         </div>
-                                                <div class="form-group">
+                        <div class="form-group">
                             <label>Modelo</label>
-                            <input type="text" class="form-control" name="txtModelo" value=""
-                                placeholder="Q7">
+                            <input type="text" class="form-control" name="txtModelo" value="" placeholder="Q7">
                         </div>
-                                                <div class="form-group">
+                        <div class="form-group">
                             <label>Color</label>
-                            <input type="text" class="form-control" name="txtColor" value=""
-                                placeholder="Navy">
+                            <input type="text" class="form-control" name="txtColor" value="" placeholder="Navy">
                         </div>
-                                                <div class="form-group">
+                        <div class="form-group">
                             <label>Año</label>
-                            <input type="number" class="form-control" name="txtAnio" value=""
-                            placeholder="2022">
+                            <input type="number" class="form-control" name="txtAnio" value="" placeholder="2022">
                         </div>
                         <div class="form-group">
                             <label>SOAT</label>
-                            <input type="text" class="form-control" name="txtSoat" value="" 
-                                placeholder="SI / NO">
+                            <input type="text" class="form-control" name="txtSoat" value="" placeholder="SI / NO">
                         </div>
                         <input type="submit" class="btn btn-primary" name="accion" value="Registrar">
                         <input type="submit" class="btn btn-success" name="accion" value="Actualizar">
