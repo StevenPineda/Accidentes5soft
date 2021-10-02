@@ -19,4 +19,6 @@ namespace AccidenteTransito.App.Persistencia{
         }   
     }
 }
+
+///"Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =DBACCIDENTETRANSITO"
 //.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =AccidenteTransitotData");
