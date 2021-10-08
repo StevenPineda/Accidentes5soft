@@ -1,6 +1,5 @@
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\appsettings.json
-C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.exe
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.deps.json
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.runtimeconfig.json
@@ -9,7 +8,6 @@ C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.Ap
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.pdb
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.Views.dll
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\bin\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.Views.pdb
-C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.csprojAssemblyReference.cache
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.AssemblyInfoInputs.cache
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.AssemblyInfo.cs
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.csproj.CoreCompileInputs.cache
@@ -30,7 +28,6 @@ C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.Ap
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.RazorTargetAssemblyInfo.cs
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.Views.pdb
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\AccidenteTransito.App.Frontend.StaticWebAssets.Manifest.cache
-C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\AccidenteTransito.App.Frontend.StaticWebAssets.xml
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.dll
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.pdb
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.genruntimeconfig.cache
@@ -82,3 +79,15 @@ C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App
 C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.pdb
 C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.genruntimeconfig.cache
 C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.csproj.CopyComplete
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.csproj.AssemblyReference.cache
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\AccidenteTransito.App.Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\scopedcss\bundle\AccidenteTransito.App.Frontend.styles.css
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Accidentes\Borrar.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Accidentes\Detalle.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Accidentes\Editar.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\BorrarAgente.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\BorrarInvolucrado.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetalleAgente.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetalleInvolucrado.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarAgente.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarInvolucrado.cshtml.g.cs

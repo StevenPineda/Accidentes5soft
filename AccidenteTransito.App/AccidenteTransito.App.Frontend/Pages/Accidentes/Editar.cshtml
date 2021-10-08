@@ -1,0 +1,168 @@
+﻿@page
+@model AccidenteTransito.App.Frontend.Pages.EditarModel
+@{
+    ViewData["Title"] = "Editar Accidente";
+}
+
+<body>
+    <div class="container center-block">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="text-center">
+                    <h3 class="display-4">TransitApp</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">Accidentes</h5>
+                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás editar los datos del
+                    Accidente seleccionado.</h6>
+                <div>
+                    <form method="POST">
+
+                        <input type="hidden" />
+
+                        <div class="mb-3">
+                            <label>Dirección</label>
+                            <input class="form-control" placeholder="Calle 1 #13-00" />
+                        </div>
+                        <div class="mb-3">
+                            <label>Latitud</label>
+                            <input class="form-control" placeholder="5,49495">
+                        </div>
+                        <div class="mb-3">
+                            <label>Longitud</label>
+                            <input class="form-control" placeholder="5,49495">
+                        </div>
+                        <div class="mb-3">
+                            <label>Barrio</label>
+                            <input class="form-control" placeholder="La Cabaña">
+                        </div>
+                        <div class="mb-3">
+                            <label>Fecha</label>
+                            <input type="date" class="form-control" placeholder="25/09/2021">
+                        </div>
+                        <div class="mb-3">
+                            <label>Hora</label>
+                            <input type="time" class="form-control" placeholder="10:00">
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de Accidente</label>
+                            <select class="form-control form-control-sm">
+                                <option>Choque</option>
+                                <option>Atropello</option>
+                                <option>Volcamiento</option>
+                                <option>Caída del ocupante</option>
+                                <option>Caída de objeto</option>
+                                <option>Incendio</option>
+                                <option>Derrumbe</option>
+                                <option>Inundación</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <!-- Aquí la lista de Agentes de  Tránsito-->
+                        <div class="mb-3">
+                            <label class="form-label">Agente de Tránsito</label>
+                            <select class="form-control">
+                            </select>
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <!-- Aquí la lista de Involucrados-->
+                        <div class="mb-3">
+                            <label class="form-label">Usuario</label>
+                            <select class="form-control">
+                            </select>
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <!-- Aquí la lista de Vehículos-->
+                        <div class="mb-3">
+                            <label class="form-label">Vehículo</label>
+                            <select class="form-control">
+                            </select>
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Descripción</label>
+                            <textarea class="form-control" rows="3"
+                                placeholder="Realiza una breve descripción de lo sucedido."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning" style="background-color: #FFA500; color: white">
+                            <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
+                            Editar Accidente</button>
+                        <a asp-page="Accidente" class="btn btn-success"
+                            style="background-color: #19284C; color: white">Volver</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="card-title"> </h2>
+            <h5 class="card-title justify-content-center">Accidentes Registrados</h5>
+            <div class="table-responsive">
+                if ("Model.Accidentes.Count"() > 0)
+                {
+                <table id="tblAccidentes" class="table table-striped table-bordered" style="width: 100%;">
+                    <thead class="thead" style="background-color: #19284C; color: white">
+                        <tr>
+                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Id)</th>
+                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Direccion)</th>
+
+                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Fecha)</th>
+
+                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().TipoAccidente)</th>
+
+                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().AgenteTransito)</th>
+                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Involucrado)</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        foreach ("var accidente in Model.Accidentes")
+                        {
+                        <tr>
+                            <td>Html.DisplayFor(m => accidente.Id)</td>
+                            <td>Html.DisplayFor(m => accidente.Direccion)</td>
+                            <!--<td>Html.DisplayFor(m => accidente.Latitud)</td>
+                            <td>Html.DisplayFor(m => accidente.Longitud)</td>
+                            <td>Html.DisplayFor(m => accidente.Barrio)</td>-->
+                            <td>Html.DisplayFor(m => accidente.Fecha)</td>
+                            <!--<td>Html.DisplayFor(m => accidente.Hora)</td>-->
+                            <td>Html.DisplayFor(m => accidente.TipoAccidente)</td>
+                            <!--<td>Html.DisplayFor(m => accidente.Descripcion)</td>-->
+                            <td>Html.DisplayFor(m => accidente.AgenteTransito.Nombre)</td>
+                            <td>Html.DisplayFor(m => accidente.Involucrado.Nombre)</td>
+                            <!--<td>Html.DisplayFor(m => accidente.Vehiculo.Placa)</td>-->
+                            <td>
+                                <a class="btn btn-info" asp-page="../Accidentes/Detalle" asp-route-id="accidente.Id">
+                                    <i class="fas fa-info-circle fa-lg"></i>
+                                    Detalle</a>
+                                <a class="btn btn-warning" asp-page="../Accidentes/Editar" asp-route-id="accidente.Id"
+                                    style="background-color: #FFA500; color: white">
+                                    <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
+                                    Editar</a>
+                                <a class="btn btn-danger" asp-page="../Accidentes/Borrar" asp-route-id="accidente.Id"
+                                    style="background-color: #FF0000; color: white">
+                                    <i class="fas fa-trash fa-lg" aria-hidden="true"></i>
+                                    Eliminar</a>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                }
+                else
+                {
+                <p>No hay Accidentes registrados.</p>
+                }
+            </div>
+        </div>
+    </div>
+</body>

@@ -20,7 +20,7 @@
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
@@ -49,14 +49,14 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container center-block row justify-content-center">
+        <div class="container">
             &copy; 2021 - 5oft - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>

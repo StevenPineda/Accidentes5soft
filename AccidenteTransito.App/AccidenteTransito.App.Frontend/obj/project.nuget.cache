@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S5lUmA5qMIIkibZQbt0Yc5flIly3tBYdz38ISpX5xTeqw65o4t1fDXQh9OeLL5cSHiGF+x67cKPD5thn7rpJZw==",
+  "dgSpecHash": "17+wv+uL6sUE7mLEU8+0KoTWLdx62cI7Q1BZQRxf7Tuis/rZMAcn4Y8bK7mZqX1qmHIFWblrkxlRWHrMMD9nxA==",
   "success": true,
-  "projectFilePath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\AccidenteTransito.App.Frontend.csproj",
+  "projectFilePath": "C:\\ProyectoAccidentes\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\AccidenteTransito.App.Frontend.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
