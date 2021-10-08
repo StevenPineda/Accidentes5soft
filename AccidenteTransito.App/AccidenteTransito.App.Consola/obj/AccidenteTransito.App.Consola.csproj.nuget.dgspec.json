@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj": {}
+    "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj": {}
   },
   "projects": {
-    "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj": {
+    "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj",
+        "projectUniqueName": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj",
         "projectName": "AccidenteTransito.App.Consola",
-        "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj",
+        "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\AccidenteTransito.App.Consola.csproj",
         "packagesPath": "C:\\Users\\Yheison\\.nuget\\packages\\",
-        "outputPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\obj\\",
+        "outputPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yheison\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -25,11 +25,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
-                "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
+              "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
+                "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
               },
-              "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj": {
-                "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj"
+              "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj": {
+                "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
+    "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
+        "projectUniqueName": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
         "projectName": "AccidenteTransito.App.Dominio",
-        "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
+        "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Yheison\\.nuget\\packages\\",
-        "outputPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\obj\\",
+        "outputPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yheison\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -106,6 +106,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -122,14 +126,14 @@
         }
       }
     },
-    "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj": {
+    "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
         "projectName": "AccidenteTransito.App.Persistencia",
-        "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
+        "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Yheison\\.nuget\\packages\\",
-        "outputPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\obj\\",
+        "outputPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yheison\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -143,8 +147,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
-                "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
+              "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
+                "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
               }
             }
           }

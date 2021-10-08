@@ -10,10 +10,8 @@ namespace AccidenteTransito.App.Dominio{
         public DateTime Fecha {get;set;}
         public DateTime Hora {get;set;}
         public TipoAccidente TipoAccidente {get;set;}
+        public string Descripcion {get;set;}
 
-        public Involucrado Involucrado {get;set;}
-        public AgenteTransito AgenteTransito {get;set;}
-        public Vehiculo Vehiculo {get;set;}
     }
 }
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {}
+    "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
+    "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
+        "projectUniqueName": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
         "projectName": "AccidenteTransito.App.Dominio",
-        "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
+        "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Yheison\\.nuget\\packages\\",
-        "outputPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\obj\\",
+        "outputPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yheison\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

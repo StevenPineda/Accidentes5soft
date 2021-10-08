@@ -44,9 +44,7 @@ namespace AccidenteTransito.App.Persistencia
                 accidenteEncontrado.Fecha=accidente.Fecha;
                 accidenteEncontrado.Hora=accidente.Hora;
                 accidenteEncontrado.TipoAccidente=accidente.TipoAccidente;
-                accidenteEncontrado.Involucrado=accidente.Involucrado;
-                accidenteEncontrado.AgenteTransito=accidente.AgenteTransito;
-                accidenteEncontrado.Vehiculo=accidente.Vehiculo;
+                accidenteEncontrado.Descripcion=accidente.Descripcion;
                 _appContext.SaveChanges();
             }
             return accidenteEncontrado;

@@ -10,3 +10,15 @@ C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Persistencia\bi
 C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.csproj.CopyComplete
 C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.dll
 C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.pdb
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.csprojAssemblyReference.cache
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.AssemblyInfoInputs.cache
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.AssemblyInfo.cs
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.dll
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.pdb
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\bin\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.deps.json
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\bin\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.dll
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\bin\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.pdb
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\bin\Debug\netstandard2.1\AccidenteTransito.App.Dominio.dll
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\bin\Debug\netstandard2.1\AccidenteTransito.App.Dominio.pdb
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Persistencia\obj\Debug\netstandard2.1\AccidenteTransito.App.Persistencia.csproj.CopyComplete

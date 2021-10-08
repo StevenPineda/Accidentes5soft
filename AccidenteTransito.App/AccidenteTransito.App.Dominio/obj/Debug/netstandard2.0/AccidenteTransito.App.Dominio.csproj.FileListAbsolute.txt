@@ -7,3 +7,12 @@ C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Dominio\bin\Deb
 C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Dominio\bin\Debug\netstandard2.0\AccidenteTransito.App.Dominio.pdb
 C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.dll
 C:\AtencionAccidente\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.pdb
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\bin\Debug\netstandard2.0\AccidenteTransito.App.Dominio.deps.json
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\bin\Debug\netstandard2.0\AccidenteTransito.App.Dominio.dll
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\bin\Debug\netstandard2.0\AccidenteTransito.App.Dominio.pdb
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.csprojAssemblyReference.cache
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.AssemblyInfoInputs.cache
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.AssemblyInfo.cs
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.csproj.CoreCompileInputs.cache
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.dll
+C:\AtencionAccidente\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Dominio\obj\Debug\netstandard2.0\AccidenteTransito.App.Dominio.pdb

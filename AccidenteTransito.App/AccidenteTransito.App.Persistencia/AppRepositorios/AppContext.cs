@@ -7,10 +7,11 @@ namespace AccidenteTransito.App.Persistencia{
 
         public DbSet<Accidente> Accidentes  {get;set;}
         public DbSet<AgenteTransito> Agente  {get;set;}
-        public DbSet<Historia> Historia  {get;set;}
         public DbSet<Involucrado> Involucrados  {get;set;}
         public DbSet<Persona> Personas  {get;set;}
         public DbSet<Vehiculo> Vehiculos {get;set;}
+        public DbSet<AccidentePersonas> AccidentePersonas {get;set;}
+        public DbSet<AccidenteVehiculos> AccidenteVehiculos {get;set;}
     
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){

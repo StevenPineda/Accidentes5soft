@@ -2072,6 +2072,9 @@
       "AccidenteTransito.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/AccidenteTransito.App.Dominio.dll": {}
         },
@@ -7268,11 +7271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
       "projectName": "AccidenteTransito.App.Persistencia",
-      "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
+      "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\AccidenteTransito.App.Persistencia.csproj",
       "packagesPath": "C:\\Users\\Yheison\\.nuget\\packages\\",
-      "outputPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\obj\\",
+      "outputPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yheison\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7286,8 +7289,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
-              "projectPath": "C:\\AtencionAccidente\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
+            "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj": {
+              "projectPath": "C:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Dominio\\AccidenteTransito.App.Dominio.csproj"
             }
           }
         }

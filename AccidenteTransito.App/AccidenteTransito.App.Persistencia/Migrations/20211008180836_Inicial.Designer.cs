@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AccidenteTransito.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210918164313_Ini")]
-    partial class Ini
+    [Migration("20211008180836_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,17 +28,13 @@ namespace AccidenteTransito.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("AgenteTransitoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Barrio")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Direccion")
+                    b.Property<string>("Descripcion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
+                    b.Property<string>("Direccion")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Fecha")
@@ -46,9 +42,6 @@ namespace AccidenteTransito.App.Persistencia.Migrations
 
                     b.Property<DateTime>("Hora")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("InvolucradoId")
-                        .HasColumnType("int");
 
                     b.Property<double>("Latitud")
                         .HasColumnType("float");
@@ -59,20 +52,53 @@ namespace AccidenteTransito.App.Persistencia.Migrations
                     b.Property<int>("TipoAccidente")
                         .HasColumnType("int");
 
-                    b.Property<int?>("VehiculoId")
+                    b.HasKey("Id");
+
+                    b.ToTable("Accidentes");
+                });
+
+            modelBuilder.Entity("AccidenteTransito.App.Dominio.AccidentePersonas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("accidenteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("personaId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AgenteTransitoId");
+                    b.HasIndex("accidenteId");
 
-                    b.HasIndex("InvolucradoId");
+                    b.HasIndex("personaId");
 
-                    b.HasIndex("VehiculoId");
+                    b.ToTable("AccidentePersonas");
+                });
 
-                    b.ToTable("Accidentes");
+            modelBuilder.Entity("AccidenteTransito.App.Dominio.AccidenteVehiculos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Accidente");
+                    b.Property<int>("accidenteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("vehiculoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("accidenteId");
+
+                    b.HasIndex("vehiculoId");
+
+                    b.ToTable("AccidenteVehiculos");
                 });
 
             modelBuilder.Entity("AccidenteTransito.App.Dominio.Persona", b =>
@@ -150,19 +176,6 @@ namespace AccidenteTransito.App.Persistencia.Migrations
                     b.ToTable("Vehiculos");
                 });
 
-            modelBuilder.Entity("AccidenteTransito.App.Dominio.Historia", b =>
-                {
-                    b.HasBaseType("AccidenteTransito.App.Dominio.Accidente");
-
-                    b.Property<string>("Descripcion")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IdHistoria")
-                        .HasColumnType("int");
-
-                    b.HasDiscriminator().HasValue("Historia");
-                });
-
             modelBuilder.Entity("AccidenteTransito.App.Dominio.AgenteTransito", b =>
                 {
                     b.HasBaseType("AccidenteTransito.App.Dominio.Persona");
@@ -198,23 +211,40 @@ namespace AccidenteTransito.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Involucrado");
                 });
 
-            modelBuilder.Entity("AccidenteTransito.App.Dominio.Accidente", b =>
+            modelBuilder.Entity("AccidenteTransito.App.Dominio.AccidentePersonas", b =>
                 {
-                    b.HasOne("AccidenteTransito.App.Dominio.AgenteTransito", "AgenteTransito")
+                    b.HasOne("AccidenteTransito.App.Dominio.Accidente", "Accidente")
                         .WithMany()
-                        .HasForeignKey("AgenteTransitoId");
+                        .HasForeignKey("accidenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("AccidenteTransito.App.Dominio.Involucrado", "Involucrado")
+                    b.HasOne("AccidenteTransito.App.Dominio.Persona", "Persona")
                         .WithMany()
-                        .HasForeignKey("InvolucradoId");
+                        .HasForeignKey("personaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Accidente");
+
+                    b.Navigation("Persona");
+                });
+
+            modelBuilder.Entity("AccidenteTransito.App.Dominio.AccidenteVehiculos", b =>
+                {
+                    b.HasOne("AccidenteTransito.App.Dominio.Accidente", "Accidente")
+                        .WithMany()
+                        .HasForeignKey("accidenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("AccidenteTransito.App.Dominio.Vehiculo", "Vehiculo")
                         .WithMany()
-                        .HasForeignKey("VehiculoId");
+                        .HasForeignKey("vehiculoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("AgenteTransito");
-
-                    b.Navigation("Involucrado");
+                    b.Navigation("Accidente");
 
                     b.Navigation("Vehiculo");
                 });
