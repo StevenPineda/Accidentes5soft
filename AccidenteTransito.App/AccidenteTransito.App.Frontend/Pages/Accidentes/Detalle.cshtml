@@ -1,7 +1,7 @@
 ﻿@page
 @model AccidenteTransito.App.Frontend.Pages.DetalleModel
 @{
-ViewData["Title"] = "Detalle de Accidente";
+    ViewData["Title"] = "Detalle de Accidente";
 }
 
 <div class="container">
@@ -17,7 +17,8 @@ ViewData["Title"] = "Detalle de Accidente";
                 <li class="list-group-item">Fecha: Html.DisplayFor(m => m.Accidente.Fecha)</li>
                 <li class="list-group-item">Hora: Html.DisplayFor(m => m.Accidente.Hora)</li>
                 <li class="list-group-item">Tipo de Accidente: Html.DisplayFor(m => m.Accidente.TipoAccidente)</li>
-                <li class="list-group-item">Agente de Tránsito: Html.DisplayFor(m => m.Accidente.AgenteTransito.Nombre)</li>
+                <li class="list-group-item">Agente de Tránsito: Html.DisplayFor(m => m.Accidente.AgenteTransito.Nombre)
+                </li>
                 <li class="list-group-item">Usuario: Html.DisplayFor(m => m.Accidente.Involucrado.Nombre)</li>
                 <li class="list-group-item">Vehículo: Html.DisplayFor(m => m.Accidente.Vehiculo.Placa)</li>
                 <li class="list-group-item">Descripción: Html.DisplayFor(m => m.Accidente.Descripcion)</li>

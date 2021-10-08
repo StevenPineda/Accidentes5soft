@@ -1,7 +1,7 @@
 ﻿@page
-@model AccidenteTransito.App.Frontend.Pages.VehiculoModel
+@model AccidenteTransito.App.Frontend.Pages.BorrarVehiculoModel
 @{
-    ViewData["Title"] = "Vehículos";
+    ViewData["Title"] = "Eliminar Vehículo";
 }
 
 <body>
@@ -17,77 +17,55 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card-body">
-                <nav class="navbar navbar-light bg-light">
-                    <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="ABC123" aria-label="Search">
-                            <button type="submit" class="btn btn-outline-success"
-                                style="background-color: #19284C; color: white">
-                                <i class="fas fa-search fa-lg"></i>
-                            </button>
-                        </form>
-                    </div>
-                </nav>
-                <br>
                 <h5 class="card-title">Vehículo</h5>
-                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás gestionar los datos de los
-                    Vehículos registrados en el sistema.</h6>
+                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás eliminar los datos del
+                    Vehículo seleccionado.</h6>
                 <div>
                     <form method="POST">
-                        <div class="form-group">
-                            <label>Tipo de Vehículo</label>
-                            <select class="form-control form-control-sm">
-                                <option>Automóvil</option>
-                                <option>Motocicleta</option>
-                                <option>Autobús</option>
-                                <option>Bicicleta</option>
-                                <option>Camión</option>
-                                <option>Scooter</option>
-                                <option>Patineta</option>
-                                <option>Patines</option>
-                                <option>Motocarro</option>
-                                <option>Cuatrimoto</option>
-                                <option>Tractocamión</option>
-                                <option>Remolque</option>
-                                <option>Tracción Animal</option>
-                                <option>Otro</option>
-                            </select>
+
+                        <input type="hidden" />
+
+                        <!-- Aquí la lista del Tipo de Vehículo-->
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de Vehículo</label>
+                            <input class="form-control" placeholder="Ingresa el tipo de vehículo." readonly />
                         </div>
-                        <div class="form-group">
-                            <label>Tipo de Servicio</label>
-                            <select class="form-control form-control-sm">
-                                <option>Privado</option>
-                                <option>Público</option>
-                                <option>Gubernamental</option>
-                            </select>
+
+                        <!-- Aquí la lista del Tipo de Servicio-->
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de Servicio</label>
+                            <input class="form-control" placeholder="Ingresa el tipo de servicio." readonly />
                         </div>
+
                         <div class="mb-3">
                             <label>Placa</label>
-                            <input class="form-control" placeholder="ABC 214">
+                            <input class="form-control" placeholder="ABC 214" readonly />
                         </div>
                         <div class="mb-3">
                             <label>Marca</label>
-                            <input class="form-control" placeholder="Audi">
+                            <input class="form-control" placeholder="Audi" readonly />
                         </div>
                         <div class="mb-3">
                             <label>Modelo</label>
-                            <input class="form-control" placeholder="Q7">
+                            <input class="form-control" placeholder="Q7" readonly />
                         </div>
                         <div class="mb-3">
                             <label>Color</label>
-                            <input class="form-control" placeholder="Navy">
+                            <input class="form-control" placeholder="Navy" readonly />
                         </div>
                         <div class="mb-3">
                             <label>Año</label>
-                            <input type="number" class="form-control" placeholder="2022">
+                            <input type="number" class="form-control" placeholder="2022" readonly />
                         </div>
                         <div class="mb-3">
                             <label>SOAT</label>
-                            <input class="form-control" placeholder="SI / NO">
+                            <input class="form-control" placeholder="SI / NO" readonly />
                         </div>
-                        <button type="submit" class="btn btn-success">
-                            <i class="fas fa-plus-square fa-lg" aria-hidden="true"></i>
-                            Registrar Vehículo</button>
+                        <button type="submit" class="btn btn-danger" style="background-color: #FF0000; color: white">
+                            <i class="fas fa-trash fa-lg" aria-hidden="true"></i>
+                            Eliminar Vehículo</button>
+                        <a asp-page="Vehiculo" class="btn btn-success"
+                            style="background-color: #19284C; color: white">Volver</a>
                     </form>
                 </div>
             </div>
@@ -128,15 +106,16 @@
                             <td>Html.DisplayFor(m => vehiculo.Anio)</td>
                             <td>Html.DisplayFor(m => vehiculo.Soat)</td>
                             <td>
-                                <a class="btn btn-info" asp-page="../Vehiculos/DetalleVehiculo" asp-route-id="vehiculo.Id">
+                                <a class="btn btn-info" asp-page="../Vehiculos/DetalleVehiculo"
+                                    asp-route-id="vehiculo.Id">
                                     <i class="fas fa-info-circle fa-lg"></i>
                                     Detalle</a>
-                                <a class="btn btn-warning" asp-page="../Vehiculos/EditarVehiculo" asp-route-id="vehiculo.Id"
-                                    style="background-color: #FFA500; color: white">
+                                <a class="btn btn-warning" asp-page="../Vehiculos/EditarVehiculo"
+                                    asp-route-id="vehiculo.Id" style="background-color: #FFA500; color: white">
                                     <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
                                     Editar</a>
-                                <a class="btn btn-danger" asp-page="../Vehiculos/BorrarVehiculo" asp-route-id="vehiculo.Id"
-                                    style="background-color: #FF0000; color: white">
+                                <a class="btn btn-danger" asp-page="../Vehiculos/BorrarVehiculo"
+                                    asp-route-id="vehiculo.Id" style="background-color: #FF0000; color: white">
                                     <i class="fas fa-trash fa-lg" aria-hidden="true"></i>
                                     Eliminar</a>
                             </td>

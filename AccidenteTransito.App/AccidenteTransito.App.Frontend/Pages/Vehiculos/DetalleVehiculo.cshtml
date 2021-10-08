@@ -1,0 +1,30 @@
+﻿@page
+@model AccidenteTransito.App.Frontend.Pages.DetalleVehiculoModel
+@{
+    ViewData["Title"] = "Detalle de Vehículo";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h2 style="color: #19284C;">Detalle de Vehículo: Html.DisplayFor(m => m.Vehiculo.Placa)</h2>
+            <ul class="list-group">
+                <li class="list-group-item">ID: Html.DisplayFor(m => m.Vehiculo.Id)</li>
+                <li class="list-group-item">Tipo de Vehículo: Html.DisplayFor(m => m.Vehiculo.TipoVehiculo)</li>
+                <li class="list-group-item">Tipo de Servicio: Html.DisplayFor(m => m.Vehiculo.TipoServicio)</li>
+                <li class="list-group-item">Placa: Html.DisplayFor(m => m.Vehiculo.Placa)</li>
+                <li class="list-group-item">Marca: Html.DisplayFor(m => m.Vehiculo.Marca)</li>
+                <li class="list-group-item">Modelo: Html.DisplayFor(m => m.Vehiculo.Modelo)</li>
+                <li class="list-group-item">Color: Html.DisplayFor(m => m.Vehiculo.Color)</li>
+                <li class="list-group-item">Año: Html.DisplayFor(m => m.Vehiculo.Anio)</li>
+                <li class="list-group-item">SOAT: Html.DisplayFor(m => m.Vehiculo.Soat)</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <a asp-page="Vehiculo" class="btn btn-success" style="background-color: #19284C; color: white">Volver</a>
+        </div>
+    </div>
+</div>

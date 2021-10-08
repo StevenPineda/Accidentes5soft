@@ -49,3 +49,6 @@ C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.Ap
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarAgente.cshtml.g.cs
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarInvolucrado.cshtml.g.cs
 C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\Involucrado.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\BorrarVehiculo.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\DetalleVehiculo.cshtml.g.cs
+C:\ProyectoAccidentes\Accidentes5soft\AccidenteTransito.App\AccidenteTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Vehiculos\EditarVehiculo.cshtml.g.cs

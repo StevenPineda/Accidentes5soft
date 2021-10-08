@@ -1,4 +1,152 @@
 ﻿@page
 @model AccidenteTransito.App.Frontend.Pages.EditarInvolucradoModel
 @{
+    ViewData["Title"] = "Editar Usuario";
 }
+
+<body>
+    <div class="container center-block">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="text-center">
+                    <h3 class="display-4">TransitApp</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-body">
+                <h5 class="card-title">Usuario</h5>
+                <h6 class="card-subtitle mb-2 text-muted">En este panel podrás editar los datos del
+                    Usuario seleccionado.</h6>
+                <div>
+                    <form method="POST">
+
+                        <input type="hidden" />
+
+                        <div class="mb-3">
+                            <label>Documento</label>
+                            <input type="number" class="form-control" placeholder="2468">
+                            <small class="form-text text-muted">Ingrese el No. de Documento sin espacios ni caracteres
+                                especiales.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label>Nombre</label>
+                            <input class="form-control" placeholder="Armando">
+                        </div>
+                        <div class="mb-3">
+                            <label>Apellidos</label>
+                            <input class="form-control" placeholder="Casas Rojas">
+                        </div>
+                        <div class="mb-3">
+                            <label>Edad</label>
+                            <input type="number" class="form-control" placeholder="58">
+                        </div>
+                        <div class="form-group">
+                            <label>Género</label>
+                            <select class="form-control form-control-sm">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>LGBT</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label>Teléfono</label>
+                            <input class="form-control" placeholder="13579">
+                        </div>
+                        <div class="mb-3">
+                            <label>Email</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp"
+                                placeholder="armancasas@mail.co">
+                            <div id="emailHelp" class="form-text">
+                                <small class="form-text text-muted">Nunca compartas tu email con otra persona.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Agente Vial</label>
+                            <select class="form-control form-control-sm">
+                                <option>Conductor</option>
+                                <option>Pasajero</option>
+                                <option>Peatón</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label>Presenta Licencia</label>
+                            <input class="form-control" placeholder="SI / NO">
+                        </div>
+                        <button type="submit" class="btn btn-warning" style="background-color: #FFA500; color: white">
+                            <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
+                            Editar Accidente</button>
+                        <a asp-page="Involucrado" class="btn btn-success"
+                            style="background-color: #19284C; color: white">Volver</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <h2 class="card-title"> </h2>
+            <h5 class="card-title justify-content-center">Usuarios Registrados</h5>
+            <div class="table-responsive">
+                if ("Model.Involucrados.Count"() > 0)
+                {
+                <table id="tblInvolucrados" class="table table-striped table-bordered" style="width: 100%;">
+                    <thead class="thead" style="background-color: #19284C; color: white">
+                        <tr>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Id)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Documento)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Nombre)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Apellidos)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Edad)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Genero)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Telefono)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Email)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().AgenteVial)</th>
+                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().PresentaLicencia)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        foreach ("var involucrado in Model.Involucrados")
+                        {
+                        <tr>
+                            <td>Html.DisplayFor(m => involucrado.Id)</td>
+                            <td>Html.DisplayFor(m => involucrado.Documento)</td>
+                            <td>Html.DisplayFor(m => involucrado.Nombre)</td>
+                            <td>Html.DisplayFor(m => involucrado.Apellidos)</td>
+                            <td>Html.DisplayFor(m => involucrado.Edad)</td>
+                            <td>Html.DisplayFor(m => involucrado.Genero)</td>
+                            <td>Html.DisplayFor(m => involucrado.Telefono)</td>
+                            <td>Html.DisplayFor(m => involucrado.Email)</td>
+                            <td>Html.DisplayFor(m => involucrado.AgenteVial)</td>
+                            <td>Html.DisplayFor(m => involucrado.PresentaLicencia)</td>
+                            <td>
+                                <a class="btn btn-info" asp-page="../Personas/DetalleInvolucrado"
+                                    asp-route-id="involucrado.Id">
+                                    <i class="fas fa-info-circle fa-lg"></i>
+                                    Detalle</a>
+                                <a class="btn btn-warning" asp-page="../Personas/EditarInvolucrado"
+                                    asp-route-id="involucrado.Id" style="background-color: #FFA500; color: white">
+                                    <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
+                                    Editar</a>
+                                <a class="btn btn-danger" asp-page="../Personas/BorrarInvolucrado"
+                                    asp-route-id="involucrado.Id" style="background-color: #FF0000; color: white">
+                                    <i class="fas fa-trash fa-lg" aria-hidden="true"></i>
+                                    Eliminar</a>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                }
+                else
+                {
+                <p>No hay Usuarios registrados.</p>
+                }
+            </div>
+            <br>
+        </div>
+    </div>
+</body>

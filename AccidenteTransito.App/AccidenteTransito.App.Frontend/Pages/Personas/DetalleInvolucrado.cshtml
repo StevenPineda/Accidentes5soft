@@ -1,4 +1,30 @@
 ﻿@page
 @model AccidenteTransito.App.Frontend.Pages.DetalleInvolucradoModel
 @{
+ViewData["Title"] = "Detalle Usuario";
 }
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h2 style="color: #19284C;">Detalle de Usuario: Html.DisplayFor(m => m.Involucrado.Nombre)</h2>
+            <ul class="list-group">
+                <li class="list-group-item">ID: Html.DisplayFor(m => m.Involucrado.Id)</li>
+                <li class="list-group-item">Documento: Html.DisplayFor(m => m.Involucrado.Documento)</li>
+                <li class="list-group-item">Nombre: Html.DisplayFor(m => m.Involucrado.Nombre)</li>
+                <li class="list-group-item">Apellidos: Html.DisplayFor(m => m.Involucrado.Apellidos)</li>
+                <li class="list-group-item">Edad: Html.DisplayFor(m => m.Involucrado.Edad)</li>
+                <li class="list-group-item">Género: Html.DisplayFor(m => m.Involucrado.Genero)</li>
+                <li class="list-group-item">Teléfono: Html.DisplayFor(m => m.Involucrado.Telefono)</li>
+                <li class="list-group-item">Email: Html.DisplayFor(m => m.Involucrado.Email)</li>
+                <li class="list-group-item">Número de Placa: Html.DisplayFor(m => m.Involucrado.AgenteVial)</li>
+                <li class="list-group-item">Rango: Html.DisplayFor(m => m.Involucrado.Involucrado.PresentaLicencia)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <a asp-page="Involucrado" class="btn btn-success" style="background-color: #19284C; color: white">Volver</a>
+        </div>
+    </div>
+</div>
