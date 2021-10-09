@@ -12,6 +12,10 @@ namespace AccidenteTransito.App.Persistencia
             _appContext=appContext;
         }
 
+        public RepositorioAccidente(){
+            _appContext=new AppContext();
+        }
+
         Accidente InterfaceRepositorioAccidente.AddAccidente(Accidente accidente){
             var accidenteAdicionado=_appContext.Accidentes.Add(accidente);
             _appContext.SaveChanges();
@@ -42,7 +46,7 @@ namespace AccidenteTransito.App.Persistencia
                 accidenteEncontrado.Longitud=accidente.Longitud;
                 accidenteEncontrado.Barrio=accidente.Barrio;
                 accidenteEncontrado.Fecha=accidente.Fecha;
-                accidenteEncontrado.Hora=accidente.Hora;
+               accidenteEncontrado.Hora=accidente.Hora;
                 accidenteEncontrado.TipoAccidente=accidente.TipoAccidente;
                 accidenteEncontrado.Descripcion=accidente.Descripcion;
                 _appContext.SaveChanges();

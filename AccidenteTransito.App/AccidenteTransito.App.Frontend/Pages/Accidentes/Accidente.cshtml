@@ -113,42 +113,41 @@
             <h2 class="card-title"> </h2>
             <h5 class="card-title justify-content-center">Accidentes Registrados</h5>
             <div class="table-responsive">
-                if ("Model.Accidentes.Count"() > 0)
+                @if (Model.Accidentes.Count() > 0)
                 {
                 <table id="tblAccidentes" class="table table-striped table-bordered" style="width: 100%;">
                     <thead class="thead" style="background-color: #19284C; color: white">
                         <tr>
-                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Id)</th>
-                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Direccion)</th>
-
-                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Fecha)</th>
-
-                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().TipoAccidente)</th>
-
-                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().AgenteTransito)</th>
-                            <th>Html.DisplayNameFor(m => m.Accidentes.FirstOrDefault().Involucrado)</th>
-
+                            <th>Id</th>
+                            <th>Direccion</th>
+                            <th>Latitud</th>
+                            <th>Longitud</th>
+                            <th>Barrio</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Tipo de Accidente</th>
+                            <th>Descripcion</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        foreach ("var accidente in Model.Accidentes")
+                        @foreach (var accidente in Model.Accidentes)
                         {
                         <tr>
-                            <td>Html.DisplayFor(m => accidente.Id)</td>
-                            <td>Html.DisplayFor(m => accidente.Direccion)</td>
-                            <!--<td>Html.DisplayFor(m => accidente.Latitud)</td>
-                            <td>Html.DisplayFor(m => accidente.Longitud)</td>
-                            <td>Html.DisplayFor(m => accidente.Barrio)</td>-->
-                            <td>Html.DisplayFor(m => accidente.Fecha)</td>
-                            <!--<td>Html.DisplayFor(m => accidente.Hora)</td>-->
-                            <td>Html.DisplayFor(m => accidente.TipoAccidente)</td>
-                            <!--<td>Html.DisplayFor(m => accidente.Descripcion)</td>-->
-                            <td>Html.DisplayFor(m => accidente.AgenteTransito.Nombre)</td>
+                            <td>@accidente.Id</td>
+                            <td>@accidente.Direccion</td>
+                            <td>@accidente.Latitud</td>
+                            <td>@accidente.Longitud</td>
+                            <td>@accidente.Barrio</td>
+                            <td>@accidente.Fecha</td>
+                            <td>@accidente.Hora</td>
+                            <td>@accidente.TipoAccidente</td>
+                            <td>@accidente.Descripcion</td>
+                            <!--<td>Html.DisplayFor(m => accidente.AgenteTransito.Nombre)</td>
                             <td>Html.DisplayFor(m => accidente.Involucrado.Nombre)</td>
-                            <!--<td>Html.DisplayFor(m => accidente.Vehiculo.Placa)</td>-->
+                            <td>Html.DisplayFor(m => accidente.Vehiculo.Placa)</td>-->
                             <td>
-                                <a class="btn btn-info" asp-page="../Accidentes/Detalle" asp-route-id="accidente.Id">
+                                <a class="btn btn-info" asp-page="../Accidentes/Detalle" asp-route-accidenteId="@accidente.Id">
                                     <i class="fas fa-info-circle fa-lg"></i>
                                     Detalle</a>
                                 <a class="btn btn-warning" asp-page="../Accidentes/Editar" asp-route-id="accidente.Id"

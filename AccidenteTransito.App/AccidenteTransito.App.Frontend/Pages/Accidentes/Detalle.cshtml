@@ -7,22 +7,24 @@
 <div class="container">
     <div class="row">
         <div class="col-8 offset-2">
-            <h2 style="color: #19284C;">Detalle de Accidente: Html.DisplayFor(m => m.Accidente.Id)</h2>
+            @if(Model.Accidente!=null)
+            {            
+            <h2 style="color: #19284C;">Detalle de Accidente: @Model.Accidente.Id</h2>
             <ul class="list-group">
-                <li class="list-group-item">ID: Html.DisplayFor(m => m.Accidente.Id)</li>
-                <li class="list-group-item">Dirección: Html.DisplayFor(m => m.Accidente.Direccion)</li>
-                <li class="list-group-item">Latitud: Html.DisplayFor(m => m.Accidente.Latitud)</li>
-                <li class="list-group-item">Longitud: Html.DisplayFor(m => m.Accidente.Longitud)</li>
-                <li class="list-group-item">Barrio: Html.DisplayFor(m => m.Accidente.Barrio)</li>
-                <li class="list-group-item">Fecha: Html.DisplayFor(m => m.Accidente.Fecha)</li>
-                <li class="list-group-item">Hora: Html.DisplayFor(m => m.Accidente.Hora)</li>
-                <li class="list-group-item">Tipo de Accidente: Html.DisplayFor(m => m.Accidente.TipoAccidente)</li>
-                <li class="list-group-item">Agente de Tránsito: Html.DisplayFor(m => m.Accidente.AgenteTransito.Nombre)
-                </li>
-                <li class="list-group-item">Usuario: Html.DisplayFor(m => m.Accidente.Involucrado.Nombre)</li>
+                <li class="list-group-item">ID: @Model.Accidente.Id</li>
+                <li class="list-group-item">Dirección: @Model.Accidente.Direccion</li>
+                <li class="list-group-item">Latitud: @Model.Accidente.Latitud</li>
+                <li class="list-group-item">Longitud:@Model.Accidente.Longitud</li>
+                <li class="list-group-item">Barrio: @Model.Accidente.Barrio</li>
+                <li class="list-group-item">Fecha: @Model.Accidente.Fecha</li>
+                <li class="list-group-item">Hora: @Model.Accidente.Hora</li>
+                <li class="list-group-item">Tipo de Accidente: @Model.Accidente.TipoAccidente</li>
+                <li class="list-group-item">Descripcion: @Model.Accidente.Descripcion</li>
+                <!--<li class="list-group-item">Usuario: Html.DisplayFor(m => m.Accidente.Involucrado.Nombre)</li>
                 <li class="list-group-item">Vehículo: Html.DisplayFor(m => m.Accidente.Vehiculo.Placa)</li>
-                <li class="list-group-item">Descripción: Html.DisplayFor(m => m.Accidente.Descripcion)</li>
+                <li class="list-group-item">Descripción: Html.DisplayFor(m => m.Accidente.Descripcion)</li>-->
             </ul>
+            }
         </div>
     </div>
     <div class="row">

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AccidenteTransito.App.Persistencia;
 
 namespace AccidenteTransito.App.Frontend
 {
@@ -24,6 +25,8 @@ namespace AccidenteTransito.App.Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //Se implementa el metodo para la interface
+            services.AddSingleton<InterfaceRepositorioAccidente, RepositorioAccidente>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

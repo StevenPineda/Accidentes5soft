@@ -14412,8 +14412,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\BorrarInvolucrado.cshtml",
+      "TargetPath": "Pages\\Personas\\BorrarInvolucrado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\Persona.cshtml",
       "TargetPath": "Pages\\Personas\\Persona.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\EditarInvolucrado.cshtml",
+      "TargetPath": "Pages\\Personas\\EditarInvolucrado.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14437,8 +14447,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Accidentes\\Editar.cshtml",
+      "TargetPath": "Pages\\Accidentes\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\DetalleInvolucrado.cshtml",
+      "TargetPath": "Pages\\Personas\\DetalleInvolucrado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Accidentes\\Detalle.cshtml",
+      "TargetPath": "Pages\\Accidentes\\Detalle.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Vehiculos\\BorrarVehiculo.cshtml",
+      "TargetPath": "Pages\\Vehiculos\\BorrarVehiculo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Vehiculos\\EditarVehiculo.cshtml",
+      "TargetPath": "Pages\\Vehiculos\\EditarVehiculo.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14452,13 +14487,38 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Vehiculos\\DetalleVehiculo.cshtml",
+      "TargetPath": "Pages\\Vehiculos\\DetalleVehiculo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Accidentes\\Borrar.cshtml",
+      "TargetPath": "Pages\\Accidentes\\Borrar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\BorrarAgente.cshtml",
+      "TargetPath": "Pages\\Personas\\BorrarAgente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\DetalleAgente.cshtml",
+      "TargetPath": "Pages\\Personas\\DetalleAgente.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\AtencionAccidente\\Accidentes5soft\\AccidenteTransito.App\\AccidenteTransito.App.Frontend\\Pages\\Personas\\EditarAgente.cshtml",
+      "TargetPath": "Pages\\Personas\\EditarAgente.cshtml",
       "FileKind": "mvc"
     }
   ],
