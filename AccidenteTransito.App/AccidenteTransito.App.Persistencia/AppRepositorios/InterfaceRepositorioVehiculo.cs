@@ -6,6 +6,8 @@ namespace AccidenteTransito.App.Persistencia
     public interface InterfaceRepositorioVehiculo
     {
         IEnumerable<Vehiculo> GetAllVehiculos();
+
+        //List<Vehiculo> GetAllListVehiculos();
  
         Vehiculo AddVehiculo(Vehiculo vehiculo);
 

@@ -12,6 +12,10 @@ namespace AccidenteTransito.App.Persistencia
             _appContext=appContext;
         }
 
+        public RepositorioVehiculo(){
+            _appContext=new AppContext();
+        }
+
         Vehiculo InterfaceRepositorioVehiculo.AddVehiculo(Vehiculo vehiculo){
             var vehiculoAdicionado=_appContext.Vehiculos.Add(vehiculo);
             _appContext.SaveChanges();
@@ -29,6 +33,9 @@ namespace AccidenteTransito.App.Persistencia
         IEnumerable<Vehiculo> InterfaceRepositorioVehiculo.GetAllVehiculos(){
             return _appContext.Vehiculos;
         }
+        //List<Vehiculo> InterfaceRepositorioVehiculo.GetAllListVehiculos(){
+            //return _appContext.Vehiculos;
+        //}
 
         Vehiculo InterfaceRepositorioVehiculo.GetVehiculo(int Id){
             return _appContext.Vehiculos.FirstOrDefault(a => a.Id==Id);

@@ -4,6 +4,22 @@
     ViewData["Title"] = "Accidentes";
 }
 
+@foreach (var vehiculo in Model.Vehiculos)
+                        {
+                        <tr>
+                            <td>@vehiculo.Id</td>
+                            <td>@vehiculo.TipoVehiculo</td>
+                            <td>@vehiculo.TipoServicio</td>
+                            <td>@vehiculo.Placa</td>
+                            <td>@vehiculo.Marca</td>
+                            <td>@vehiculo.Modelo</td>
+                            <td>@vehiculo.Color</td>
+                            <td>@vehiculo.Anio</td>
+                            <td>@vehiculo.Soat</td>
+                        </tr>
+                        <select><option>@vehiculo.Id "," @vehiculo.Placa</option></select>
+}
+                        }
 <body>
     <div class="container center-block">
         <div class="row justify-content-center">
@@ -35,28 +51,28 @@
                 <div>
                     <form method="POST">
                         <div class="mb-3">
-                            <label>Dirección</label>
-                            <input class="form-control" placeholder="Calle 1 #13-00" />
+                            <label asp-for="Accidente.Direccion">Dirección</label>
+                            <input asp-for="Accidente.Direccion" class="form-control" placeholder="Calle 1 #13-00"/>
                         </div>
                         <div class="mb-3">
                             <label>Latitud</label>
-                            <input class="form-control" placeholder="5,49495">
+                            <input asp-for="Accidente.Latitud" class="form-control" placeholder="5,49495">
                         </div>
                         <div class="mb-3">
                             <label>Longitud</label>
-                            <input class="form-control" placeholder="5,49495">
+                            <input asp-for="Accidente.Longitud" class="form-control" placeholder="5,49495">
                         </div>
                         <div class="mb-3">
                             <label>Barrio</label>
-                            <input class="form-control" placeholder="La Cabaña">
+                            <input asp-for="Accidente.Barrio" class="form-control" placeholder="La Cabaña">
                         </div>
                         <div class="mb-3">
                             <label>Fecha</label>
-                            <input type="date" class="form-control" placeholder="25/09/2021">
+                            <input type="date" asp-for="Accidente.Fecha" class="form-control" placeholder="25/09/2021">
                         </div>
                         <div class="mb-3">
                             <label>Hora</label>
-                            <input type="time" class="form-control" placeholder="10:00">
+                            <input type="time" asp-for="Accidente.Hora" class="form-control" placeholder="10:00">
                         </div>
                         <div class="form-group">
                             <label>Tipo de Accidente</label>
@@ -93,13 +109,17 @@
                         <div class="mb-3">
                             <label class="form-label">Vehículos</label>
                             <select class="form-control">
+                            @foreach (var vehiculo in Model.Vehiculos)
+                            {
+                            <option value=@vehiculo.Id>@vehiculo.Placa</option>
+                            }
                             </select>
                             <span class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
                             <label>Descripción</label>
-                            <textarea class="form-control" rows="3"
+                            <textarea asp-for="Accidente.Descripcion" class="form-control" rows="3"
                                 placeholder="Realiza una breve descripción de lo sucedido."></textarea>
                         </div>
                         <button type="submit" class="btn btn-success">
@@ -150,7 +170,7 @@
                                 <a class="btn btn-info" asp-page="../Accidentes/Detalle" asp-route-accidenteId="@accidente.Id">
                                     <i class="fas fa-info-circle fa-lg"></i>
                                     Detalle</a>
-                                <a class="btn btn-warning" asp-page="../Accidentes/Editar" asp-route-id="accidente.Id"
+                                <a class="btn btn-warning" asp-page="../Accidentes/Editar" asp-route-accidenteId="@accidente.Id"
                                     style="background-color: #FFA500; color: white">
                                     <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
                                     Editar</a>

@@ -27,6 +27,7 @@ namespace AccidenteTransito.App.Frontend
             services.AddRazorPages();
             //Se implementa el metodo para la interface
             services.AddSingleton<InterfaceRepositorioAccidente, RepositorioAccidente>();
+            services.AddSingleton<InterfaceRepositorioVehiculo, RepositorioVehiculo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
