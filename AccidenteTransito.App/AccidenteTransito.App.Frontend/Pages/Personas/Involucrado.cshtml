@@ -35,37 +35,37 @@
                     <form method="POST">
                         <div class="mb-3">
                             <label>Documento</label>
-                            <input type="number" class="form-control" placeholder="2468">
+                            <input asp-for="Involucrado.Documento" type="number" class="form-control" placeholder="2468">
                             <small class="form-text text-muted">Ingrese el No. de Documento sin espacios ni caracteres
                                 especiales.</small>
                         </div>
                         <div class="mb-3">
                             <label>Nombre</label>
-                            <input class="form-control" placeholder="Armando">
+                            <input asp-for="Involucrado.Nombres" class="form-control" placeholder="Armando">
                         </div>
                         <div class="mb-3">
                             <label>Apellidos</label>
-                            <input class="form-control" placeholder="Casas Rojas">
+                            <input asp-for="Involucrado.Apellidos" class="form-control" placeholder="Casas Rojas">
                         </div>
                         <div class="mb-3">
                             <label>Edad</label>
-                            <input type="number" class="form-control" placeholder="58">
+                            <input asp-for="Involucrado.Edad" type="number" class="form-control" placeholder="58">
                         </div>
                         <div class="form-group">
                             <label>Género</label>
-                            <select class="form-control form-control-sm">
-                                <option>Masculino</option>
-                                <option>Femenino</option>
-                                <option>LGBT</option>
+                            <select asp-for="Involucrado.Genero" class="form-control form-control-sm">
+                                <option value=0>Masculino</option>
+                                <option value=1>Femenino</option>
+                                <option value=2>LGBT</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label>Teléfono</label>
-                            <input class="form-control" placeholder="13579">
+                            <input asp-for="Involucrado.Telefono" class="form-control" placeholder="13579">
                         </div>
                         <div class="mb-3">
                             <label>Email</label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp"
+                            <input asp-for="Involucrado.Email" type="email" class="form-control" aria-describedby="emailHelp"
                                 placeholder="armancasas@mail.co">
                             <div id="emailHelp" class="form-text">
                                 <small class="form-text text-muted">Nunca compartas tu email con otra persona.
@@ -74,15 +74,14 @@
                         </div>
                         <div class="form-group">
                             <label>Agente Vial</label>
-                            <select class="form-control form-control-sm">
-                                <option>Conductor</option>
-                                <option>Pasajero</option>
-                                <option>Peatón</option>
+                            <select asp-for="Involucrado.AgenteVial" class="form-control form-control-sm">
+                                <option value=0>Conductor</option>                              
+                                <option value=1>Peatón</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label>Presenta Licencia</label>
-                            <input class="form-control" placeholder="SI / NO">
+                            <input asp-for="Involucrado.PresentaLicencia" class="form-control" placeholder="SI / NO">
                         </div>
                         <button type="submit" class="btn btn-success">
                             <i class="fas fa-plus-square fa-lg" aria-hidden="true"></i>
@@ -96,45 +95,45 @@
             <h2 class="card-title"> </h2>
             <h5 class="card-title justify-content-center">Usuarios Registrados</h5>
             <div class="table-responsive">
-                if ("Model.Involucrados.Count"() > 0)
+                @if (Model.Involucrados.Count() > 0)
                 {
                 <table id="tblInvolucrados" class="table table-striped table-bordered" style="width: 100%;">
                     <thead class="thead" style="background-color: #19284C; color: white">
                         <tr>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Id)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Documento)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Nombre)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Apellidos)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Edad)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Genero)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Telefono)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Email)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().AgenteVial)</th>
-                            <th>Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().PresentaLicencia)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Id)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Documento)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Nombres)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Apellidos)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Edad)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Genero)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Telefono)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().Email)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().AgenteVial)</th>
+                            <th>@Html.DisplayNameFor(m => m.Involucrados.FirstOrDefault().PresentaLicencia)</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        foreach ("var involucrado in Model.Involucrados")
+                        @foreach (var involucrado in Model.Involucrados)
                         {
                         <tr>
-                            <td>Html.DisplayFor(m => involucrado.Id)</td>
-                            <td>Html.DisplayFor(m => involucrado.Documento)</td>
-                            <td>Html.DisplayFor(m => involucrado.Nombre)</td>
-                            <td>Html.DisplayFor(m => involucrado.Apellidos)</td>
-                            <td>Html.DisplayFor(m => involucrado.Edad)</td>
-                            <td>Html.DisplayFor(m => involucrado.Genero)</td>
-                            <td>Html.DisplayFor(m => involucrado.Telefono)</td>
-                            <td>Html.DisplayFor(m => involucrado.Email)</td>
-                            <td>Html.DisplayFor(m => involucrado.AgenteVial)</td>
-                            <td>Html.DisplayFor(m => involucrado.PresentaLicencia)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Id)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Documento)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Nombres)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Apellidos)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Edad)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Genero)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Telefono)</td>
+                            <td>@Html.DisplayFor(m => involucrado.Email)</td>
+                            <td>@Html.DisplayFor(m => involucrado.AgenteVial)</td>
+                            <td>@Html.DisplayFor(m => involucrado.PresentaLicencia)</td>
                             <td>
                                 <a class="btn btn-info" asp-page="../Personas/DetalleInvolucrado"
-                                    asp-route-id="involucrado.Id">
+                                    asp-route-involucradoId="@involucrado.Id">
                                     <i class="fas fa-info-circle fa-lg"></i>
                                     Detalle</a>
                                 <a class="btn btn-warning" asp-page="../Personas/EditarInvolucrado"
-                                    asp-route-id="involucrado.Id" style="background-color: #FFA500; color: white">
+                                    asp-route-involucradoId="@involucrado.Id" style="background-color: #FFA500; color: white">
                                     <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
                                     Editar</a>
                                 <a class="btn btn-danger" asp-page="../Personas/BorrarInvolucrado"

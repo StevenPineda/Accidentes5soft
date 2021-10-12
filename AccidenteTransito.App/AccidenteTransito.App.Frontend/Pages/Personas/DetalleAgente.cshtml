@@ -7,18 +7,18 @@ ViewData["Title"] = "Detalle Agente de Tránsito";
 <div class="container">
     <div class="row">
         <div class="col-8 offset-2">
-            <h2 style="color: #19284C;">Detalle de Agente de Tránsito: Html.DisplayFor(m => m.Agente.Nombre)</h2>
+            <h2 style="color: #19284C;">Detalle de Agente de Tránsito: @Html.DisplayFor(m => m.AgenteTransito.Nombres)</h2>
             <ul class="list-group">
-                <li class="list-group-item">ID: Html.DisplayFor(m => m.Agente.Id)</li>
-                <li class="list-group-item">Documento: Html.DisplayFor(m => m.Agente.Documento)</li>
-                <li class="list-group-item">Nombre: Html.DisplayFor(m => m.Agente.Nombre)</li>
-                <li class="list-group-item">Apellidos: Html.DisplayFor(m => m.Agente.Apellidos)</li>
-                <li class="list-group-item">Edad: Html.DisplayFor(m => m.Agente.Edad)</li>
-                <li class="list-group-item">Género: Html.DisplayFor(m => m.Agente.Genero)</li>
-                <li class="list-group-item">Teléfono: Html.DisplayFor(m => m.Agente.Telefono)</li>
-                <li class="list-group-item">Email: Html.DisplayFor(m => m.Agente.Email)</li>
-                <li class="list-group-item">Número de Placa: Html.DisplayFor(m => m.Agente.NumeroPlaca)</li>
-                <li class="list-group-item">Rango: Html.DisplayFor(m => m.Agente.Involucrado.Rango)</li>
+                <li class="list-group-item">ID: @Html.DisplayFor(m => m.AgenteTransito.Id)</li>
+                <li class="list-group-item">Documento: @Html.DisplayFor(m => m.AgenteTransito.Documento)</li>
+                <li class="list-group-item">Nombre: @Html.DisplayFor(m => m.AgenteTransito.Nombres)</li>
+                <li class="list-group-item">Apellidos: @Html.DisplayFor(m => m.AgenteTransito.Apellidos)</li>
+                <li class="list-group-item">Edad: @Html.DisplayFor(m => m.AgenteTransito.Edad)</li>
+                <li class="list-group-item">Género: @Html.DisplayFor(m => m.AgenteTransito.Genero)</li>
+                <li class="list-group-item">Teléfono: @Html.DisplayFor(m => m.AgenteTransito.Telefono)</li>
+                <li class="list-group-item">Email: @Html.DisplayFor(m => m.AgenteTransito.Email)</li>
+                <li class="list-group-item">Número de Placa: @Html.DisplayFor(m => m.AgenteTransito.NumeroPlaca)</li>
+                <li class="list-group-item">Rango: @Html.DisplayFor(m => m.AgenteTransito.Rango)</li>
             </ul>
         </div>
     </div>

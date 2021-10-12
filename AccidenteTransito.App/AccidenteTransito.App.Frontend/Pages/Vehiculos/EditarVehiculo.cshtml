@@ -1,4 +1,5 @@
 ﻿@page
+@using Dominio
 @model AccidenteTransito.App.Frontend.Pages.EditarVehiculoModel
 @{
     ViewData["Title"] = "Editar Vehículo";
@@ -14,7 +15,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card-body">
                 <h5 class="card-title">Vehículo</h5>
@@ -23,12 +24,27 @@
                 <div>
                     <form method="POST">
 
-                        <input type="hidden" />
+                        <input type="hidden" asp-for="@Model.Vehiculo.Id"/>
 
                         <div class="form-group">
                             <label>Tipo de Vehículo</label>
-                            <select class="form-control form-control-sm">
-                                <option>Automóvil</option>
+                            <!-- Manera automatica, solo que no trae Id
+                            <div class="editor-field">
+                            @Html.DropDownListFor(model => model.TipoVehiculo, 
+                            new SelectList(Enum.GetValues(typeof(TipoVehiculo))))</div>-->
+
+                            <select asp-for="Vehiculo.TipoVehiculo" class="form-control form-control-sm">
+                                <option value=0>Sedam</option>
+                                <option value=1>Cupet</option>
+                                <option value=2>Campero</option>
+                                <option value=3>Furgoneta</option>
+                                <option value=4>Bus</option>
+                                <option value=5>Camion</option>
+                                <option value=6>TractoCamion</option>
+                                <option value=7>otocicleta</option>
+                                <option value=8>Monopatin</option>
+                                <option value=9>Bicicleta</option>
+                                <!--<option>Automóvil</option>
                                 <option>Motocicleta</option>
                                 <option>Autobús</option>
                                 <option>Bicicleta</option>
@@ -41,12 +57,12 @@
                                 <option>Tractocamión</option>
                                 <option>Remolque</option>
                                 <option>Tracción Animal</option>
-                                <option>Otro</option>
+                                <option>Otro</option>-->
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Tipo de Servicio</label>
-                            <select class="form-control form-control-sm">
+                            <select asp-for="Vehiculo.TipoServicio" class="form-control form-control-sm">
                                 <option>Privado</option>
                                 <option>Público</option>
                                 <option>Gubernamental</option>
@@ -54,27 +70,27 @@
                         </div>
                         <div class="mb-3">
                             <label>Placa</label>
-                            <input class="form-control" placeholder="ABC 214">
+                            <input asp-for="Vehiculo.Placa" class="form-control" placeholder="ABC 214">
                         </div>
                         <div class="mb-3">
                             <label>Marca</label>
-                            <input class="form-control" placeholder="Audi">
+                            <input asp-for="Vehiculo.Marca" class="form-control" placeholder="Audi">
                         </div>
                         <div class="mb-3">
                             <label>Modelo</label>
-                            <input class="form-control" placeholder="Q7">
+                            <input asp-for="Vehiculo.Modelo" class="form-control" placeholder="Q7">
                         </div>
                         <div class="mb-3">
                             <label>Color</label>
-                            <input class="form-control" placeholder="Navy">
+                            <input asp-for="Vehiculo.Color" class="form-control" placeholder="Navy">
                         </div>
                         <div class="mb-3">
                             <label>Año</label>
-                            <input type="number" class="form-control" placeholder="2022">
+                            <input asp-for="Vehiculo.Anio" type="number" class="form-control" placeholder="2022">
                         </div>
                         <div class="mb-3">
                             <label>SOAT</label>
-                            <input class="form-control" placeholder="SI / NO">
+                            <input asp-for="Vehiculo.Soat" class="form-control" placeholder="SI / NO">
                         </div>
                         <button type="submit" class="btn btn-warning" style="background-color: #FFA500; color: white">
                             <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
@@ -86,7 +102,7 @@
             </div>
         </div>
 
-        <div class="col-md-8">
+        <!--<div class="col-md-8">
             <h2 class="card-title"> </h2>
             <h5 class="card-title justify-content-center">Vehículos Registrados</h5>
             <div class="table-responsive">
@@ -145,6 +161,6 @@
                 }
             </div>
             <br>
-        </div>
+        </div>-->
     </div>
 </body>

@@ -27,6 +27,65 @@
             }
         </div>
     </div>
+    <div class="col-md-8">
+            <h2 class="card-title"> </h2>
+            <h5 class="card-title justify-content-center">Vehículos Registrados</h5>
+            <div class="table-responsive">
+                if ("Model.Vehiculos.Count() > 0")
+                {
+                <table id="tblVehiculos" class="table table-striped table-bordered" style="width: 100%;">
+                    <thead class="thead" style="background-color: #19284C; color: white">
+                        <tr>
+                            <!--<th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Id)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().TipoVehiculo)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().TipoServicio)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Placa)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Marca)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Modelo)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Color)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Anio)</th>
+                            <th>Html.DisplayNameFor(m => m.Vehiculos.FirstOrDefault().Soat)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        foreach ("var vehiculo in Model.Vehiculos")
+                        {
+                        <tr>
+                            <td>Html.DisplayFor(m => vehiculo.Id)</td>
+                            <td>Html.DisplayFor(m => vehiculo.TipoVehiculo)</td>
+                            <td>Html.DisplayFor(m => vehiculo.TipoServicio)</td>
+                            <td>Html.DisplayFor(m => vehiculo.Placa)</td>
+                            <td>Html.DisplayFor(m => vehiculo.Marca)</td>
+                            <td>Html.DisplayFor(m => vehiculo.Modelo)</td>
+                            <td>Html.DisplayFor(m => vehiculo.Color)</td>
+                            <td>Html.DisplayFor(m => vehiculo.Anio)</td>
+                            <td>Html.DisplayFor(m => vehiculo.Soat)</td>
+                            <td>
+                                <a class="btn btn-info" asp-page="../Vehiculos/DetalleVehiculo" asp-route-vehiculoId="vehiculo.Id">
+                                    <i class="fas fa-info-circle fa-lg"></i>
+                                    Detalle</a>
+                                <a class="btn btn-warning" asp-page="../Vehiculos/EditarVehiculo" asp-route-vehiculoId="vehiculo.Id"
+                                    style="background-color: #FFA500; color: white">
+                                    <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
+                                    Editar</a>
+                                <a class="btn btn-danger" asp-page="../Vehiculos/BorrarVehiculo" asp-route-id="vehiculo.Id"
+                                    style="background-color: #FF0000; color: white">
+                                    <i class="fas fa-trash fa-lg" aria-hidden="true"></i>
+                                    Eliminar</a>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                }
+                else
+                {
+                <p>No hay Vehículos registrados.</p>
+                }
+            </div>
+            <br>
+        </div>
     <div class="row">
         <div class="col-6">
             <a asp-page="Accidente" class="btn btn-success" style="background-color: #19284C; color: white">Volver</a>

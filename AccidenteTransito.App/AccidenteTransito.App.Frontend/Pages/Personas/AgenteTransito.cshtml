@@ -36,37 +36,37 @@
                     <form method="POST">
                         <div class="mb-3">
                             <label>Documento</label>
-                            <input type="number" class="form-control" placeholder="12345" />
+                            <input asp-for="AgenteTransito.Documento" type="number" class="form-control" placeholder="12345" />
                             <small class="form-text text-muted">Ingrese el No. de Documento sin espacios ni caracteres
                                 especiales.</small>
                         </div>
                         <div class="mb-3">
                             <label>Nombre</label>
-                            <input class="form-control" placeholder="Pepita">
+                            <input asp-for="AgenteTransito.Nombres" class="form-control" placeholder="Pepita">
                         </div>
                         <div class="mb-3">
                             <label>Apellidos</label>
-                            <input class="form-control" placeholder="Pérez Sosa">
+                            <input asp-for="AgenteTransito.Apellidos" class="form-control" placeholder="Pérez Sosa">
                         </div>
                         <div class="mb-3">
                             <label>Edad</label>
-                            <input type="number" class="form-control" placeholder="18">
+                            <input asp-for="AgenteTransito.Edad" type="number" class="form-control" placeholder="18">
                         </div>
                         <div class="form-group">
                             <label>Género</label>
-                            <select class="form-control form-control-sm">
-                                <option>Femenino</option>
-                                <option>Masculino</option>
-                                <option>LGBT</option>
+                            <select asp-for="AgenteTransito.Genero" class="form-control form-control-sm">
+                                <option value=0>Masculino</option>
+                                <option value=1>Femenino</option>
+                                <option value=2>LGBTI</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label>Teléfono</label>
-                            <input class="form-control" placeholder="987654">
+                            <input asp-for="AgenteTransito.Telefono" class="form-control" placeholder="987654">
                         </div>
                         <div class="mb-3">
                             <label>Email</label>
-                            <input type="email" class="form-control" aria-describedby="emailHelp"
+                            <input asp-for="AgenteTransito.Email" type="email" class="form-control" aria-describedby="emailHelp"
                                 placeholder="perezsosa@transito.co">
                             <div id="emailHelp" class="form-text">
                                 <small class="form-text text-muted">Nunca compartas tu email con otra persona.
@@ -75,11 +75,11 @@
                         </div>
                         <div class="mb-3">
                             <label>Número de Placa</label>
-                            <input type="number" class="form-control" placeholder="2021">
+                            <input asp-for="AgenteTransito.NumeroPlaca" type="number" class="form-control" placeholder="2021">
                         </div>
                         <div class="mb-3">
                             <label>Rango</label>
-                            <input class="form-control" placeholder="Subteniente">
+                            <input asp-for="AgenteTransito.Rango" class="form-control" placeholder="Subteniente">
                         </div>
                         <button type="submit" class="btn btn-success">
                             <i class="fas fa-plus-square fa-lg" aria-hidden="true"></i>
@@ -92,43 +92,43 @@
             <h2 class="card-title"> </h2>
             <h5 class="card-title justify-content-center">Agentes de Tránsito Registrados</h5>
             <div class="table-responsive">
-                if ("Model.Agentes.Count"() > 0)
+                @if (Model.AgentesTransito.Count() > 0)
                 {
                 <table id="tblAgentes" class="table table-striped table-bordered" style="width: 100%;">
                     <thead class="thead" style="background-color: #19284C; color: white">
                         <tr>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Id)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Documento)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Nombre)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Apellidos)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Edad)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Genero)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Telefono)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Email)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().NumeroPlaca)</th>
-                            <th>Html.DisplayNameFor(m => m.Agentes.FirstOrDefault().Rango)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Id)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Documento)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Nombres)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Apellidos)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Edad)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Genero)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Telefono)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Email)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().NumeroPlaca)</th>
+                            <th>@Html.DisplayNameFor(m => m.AgentesTransito.FirstOrDefault().Rango)</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        foreach ("var agente in Model.Agentes")
+                        @foreach (var agente in Model.AgentesTransito)
                         {
                         <tr>
-                            <td>Html.DisplayFor(m => agente.Id)</td>
-                            <td>Html.DisplayFor(m => agente.Documento)</td>
-                            <td>Html.DisplayFor(m => agente.Nombre)</td>
-                            <td>Html.DisplayFor(m => agente.Apellidos)</td>
-                            <td>Html.DisplayFor(m => agente.Edad)</td>
-                            <td>Html.DisplayFor(m => agente.Genero)</td>
-                            <td>Html.DisplayFor(m => agente.Telefono)</td>-->
-                            <td>Html.DisplayFor(m => agente.Email)</td>
-                            <td>Html.DisplayFor(m => agente.NumeroPlaca)</td>-->
-                            <td>Html.DisplayFor(m => agente.Rango)</td>
+                            <td>@Html.DisplayFor(m => agente.Id)</td>
+                            <td>@Html.DisplayFor(m => agente.Documento)</td>
+                            <td>@Html.DisplayFor(m => agente.Nombres)</td>
+                            <td>@Html.DisplayFor(m => agente.Apellidos)</td>
+                            <td>@Html.DisplayFor(m => agente.Edad)</td>
+                            <td>@Html.DisplayFor(m => agente.Genero)</td>
+                            <td>@Html.DisplayFor(m => agente.Telefono)</td>-->
+                            <td>@Html.DisplayFor(m => agente.Email)</td>
+                            <td>@Html.DisplayFor(m => agente.NumeroPlaca)</td>-->
+                            <td>@Html.DisplayFor(m => agente.Rango)</td>
                             <td>
-                                <a class="btn btn-info" asp-page="../Personas/DetalleAgente" asp-route-id="agente.Id">
+                                <a class="btn btn-info" asp-page="../Personas/DetalleAgente" asp-route-agenteId="@agente.Id">
                                     <i class="fas fa-info-circle fa-lg"></i>
                                     Detalle</a>
-                                <a class="btn btn-warning" asp-page="../Personas/EditarAgente" asp-route-id="agente.Id"
+                                <a class="btn btn-warning" asp-page="../Personas/EditarAgente" asp-route-agenteId="@agente.Id"
                                     style="background-color: #FFA500; color: white">
                                     <i class="fas fa-edit fa-lg" aria-hidden="true"></i>
                                     Editar</a>
